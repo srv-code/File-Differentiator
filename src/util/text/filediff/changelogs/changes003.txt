@@ -1,0 +1,24 @@
+Name: changes003
+
+Version: 0.3
+
+Changes:
+	* [DONE] Add this file as a change log
+
+	* [DONE] Change the word 'Column' from diff result report to 'byte'.
+        In case of ASCII files report as:	First mismatch at: line x, byte y
+        In case of binary files report as: 	First mismatch at: byte y
+
+    * [DISSOLVE] (Deprecated) A DiffFormatter class should be added for proper result formatting in String.
+        toString() from DiffResult should be transferred to this new class.
+
+    * [DONE] Changed option -patt to -pattacc and now no need to add -pattign after -patt <pattern-string>.
+        Can give directly -pattign|-pattacc <pattern-string>
+
+    * [PARTIAL] Add a switch for binary & ASCII (default) file comparisions.
+        For ASCII files: 	[IGNORED] Character based IO streams should be used.
+                            [DONE] Another test should be done for differences in line terminators and should be reported separately.
+        For binary files: 	[IGNORED] Byte based IO streams should be used.
+							[DONE] Line terminators shouldn't be checked for.
+
+    * [DONE] Update the app version

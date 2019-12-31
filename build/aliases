@@ -1,0 +1,2 @@
+alias b='javac -d out src/tester/Main1.java src/util/text/filediff/diff/DiffResult.java src/util/text/filediff/diff/DiffResultBuilder.java src/util/text/filediff/handler/error/ErrorHandler.java src/util/text/filediff/handler/fs/FileSystemHandler.java'
+alias r='java -cp out tester.Main1'

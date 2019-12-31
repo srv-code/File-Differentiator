@@ -1,0 +1,30 @@
+------- Changes in new branch -------
+Name: changes003
+	Version: 0.3
+	Add this file as change.log
+	Changes:
+		* Change the word 'Column' from diff result report to 'byte'.
+			In case of ASCII files report as:	First mismatch at: line x, byte y
+			In case of binary files report as: 	First mismatch at: byte y
+		
+		* A DiffFormatter class should be added for proper result formatting in String.
+		    toString() from DiffResult should be transferred to this new class.
+		* Add a switch for binary & ASCII (default) file comparisions.
+			For ASCII files: 	Character based IO streams should be used.
+								Another test should be done for difference in line terminators and should be reported separately.
+			For binary files: 	Byte based IO streams should be used and line terminators shouldn't be checked for.
+		* Update the app version
+
+Name: changes004
+	Version: 0.31
+	Add this file as change.log
+	Changes:
+		* [DONE] Resolve the non-standard behaviour of regex 
+		* [DONE] Add a facility to sort all the outputs before displaying
+		* Show the results in a columnar fashion
+
+
+Others:
+	* Include a logger system
+	* Finally get a GUI cover and drag and drop feature to provide root paths 
+	* Showing wrong file diff line and byte numbers -- more testing needed
