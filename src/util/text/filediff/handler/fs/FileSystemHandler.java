@@ -94,7 +94,10 @@ public class FileSystemHandler {
 		checkContents = val;
 	}
 	
-	public void process() throws IOException { // sets all resultant maps
+    /**
+      * Sets all resultant maps
+      * */
+	public void process() throws IOException {
 		if(rootIsDir) {
 			buildList(newerRootDir, allNewer);
 			buildList(olderRootDir, allOlder);
